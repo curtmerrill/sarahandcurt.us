@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Sarah+Curt: Wedding details</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="canonical" href="http://sarahandcurt.us/wedding.html">
+    <link rel="stylesheet" href="css/wedding.css">
+    
+    <!-- Typekit -->
+    <script src="//use.typekit.net/kso2whe.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>    
+
+    <meta name="description" content="Sarah and Curt are getting married">
+
+    <!-- Facebook and Twitter -->
+    <meta property="og:image" content="http://www.sarahandcurt.com/img/campfire.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="" content ="">
+</head>
+<body>
+    <header>
+        <h1 class="site-name"><a href="/">Sarah<small>+</small>Curt</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-menu__item"><a href="wedding.html">Wedding</a></li>
+                <li class="nav-menu__item"><a href="honeymoon.html">Honeymoon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+
+    <h2>Registry</h2>
+
+    <p><strong>Thank you so much for thinking of us!</strong></p>
+    <p>Your love, support and presence at our wedding is all we need.</p>
+    <p>But if you would like to give us a gift, please <a href="honeymoon.html">vote on our honeymoon</a>.</p>
+
+    </section>
+
+    <footer>
+        <p>E-mail us: <a href="mailto:wedding@sarahandcurt.us">wedding@sarahandcurt.us</a></p>
+    </footer>
+
+</body>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="js/leaflet.js"></script>
+
+<script>
+    /* Map */
+    var map = L.map('wedding-map').setView([30.735, -81.478], 10);
+    L.tileLayer('http://{s}.tiles.mapbox.com/v3/curtmerrill.lbj9gdjh/{z}/{x}/{y}.png', {
+        maxZoom: 14
+    }).addTo(map);
+
+    /* marker style */
+    var markerIcon = L.icon({
+        iconUrl: 'img/marker.png',
+        
+        iconSize: [20, 28],
+        iconAnchor: [10, 27],
+        popupAnchor: [0, -29]
+    });
+
+    var greyField = L.marker([30.779414,-81.468558],{icon: markerIcon}).addTo(map);
+    greyField.bindPopup('<b>Greyfield Inn</b>');
+
+    var ferryDock = L.marker([30.67165,-81.4652967],{icon: markerIcon}).addTo(map);
+    ferryDock.bindPopup('<b>Ferry dock</b><br>Next to Brett\'s Waterway Cafe (<a href="http://maps.google.com/maps?daddr=1+S+Front+St,+Fernandina+Beach+FL">Directions</a>)');
+
+</script>
+
+
+<script>
+  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+  insertBefore(d,q)}(window,document,'script','_gs');
+
+  _gs('GSN-235601-Q');
+</script>
+</html>

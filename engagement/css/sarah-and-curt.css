@@ -1,0 +1,125 @@
+.photo-container-bowling {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    padding-right: 40px;
+    background-image: url('../img/pink-fountain.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.photo-container-engagement {
+    margin: 0 0 1em 0;
+    width: 100%;
+    height: 450px;
+    padding-right: 40px;
+    background-image: url('../img/engagement-photo.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+h1.sitename {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    font-family: "futura-pt",sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5em;
+    font-style: italic;
+    text-align: left;
+    color: #fff;
+    text-shadow:1px 1px 4px black;
+    line-height: .75em;
+}
+h2.engaged {
+    font-family: "futura-pt",sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5em;
+    font-style: italic;
+    text-align: right;
+    color: #fff;
+    text-shadow:1px 1px 4px black;
+    line-height: .75em;    
+}
+
+h1.sitename>span {
+    font-weight: 300;
+    font-size: .6em;
+    text-transform: lowercase;
+}
+
+h2.name {
+    line-height: 1em;
+    margin-top: 0;
+    padding-top: .5em;
+    font-family: "futura-pt",sans-serif;
+    font-weight: 300;
+    letter-spacing: .025em;
+    color: #fff;
+    text-shadow:1px 1px 4px black;
+}
+
+.label-custom {
+    background-color: #b4b4b4;
+}
+
+.key {
+    font-family: "futura-pt", sans-serif;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding-top: 3px;
+}
+
+.content p {
+    font-weight: bold;
+}
+.content p>span {
+    font-weight: normal;
+    font-style: italic;
+}
+.bios {
+    background-color: #5a8aa6;
+}
+.bio {
+    padding-bottom: 1em;
+}
+.bio-curt {
+    background-color: #5a8aa6;
+}
+.bio-sarah {
+    background-color: #5aa695;
+}
+
+.story-item {
+    margin-bottom: 1.5em;
+}
+
+.story-item .key {
+    position:relative;
+    top: -3px;
+    font-weight: normal;
+    font-size: 1em;
+}
+.geo-data { 
+    color: #fff;
+    text-align: right;
+}
+
+.footer {
+    margin: 1em 0 0 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: #8e2234;
+}
+
+
+.light { color: #666; }
+
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 700;
+}
