@@ -1,8 +1,8 @@
 // NC Countdown
 // requires: jQuery, moment
 
-(function(scs) {
-    scs(window.jQuery, window, document);
+(function(nc) {
+    nc(window.jQuery, window, document);
     }(function($, window, document) {
         // jQuery $ locally scoped
 
@@ -19,8 +19,17 @@
   
             // set countdown
             var now = moment(),
-                moveDate = moment("20150920");
+                moveDate = moment("2015-09-20"),
+                diff = moveDate - now,
+                days = moment.duration(diff).days();
 
+            var $countdownComplete = $('<div class="countdown-complete">We\'re here!</div>');
+
+            if (days >=0) {
+                $('.js-days').text(days);
+            } else {
+                $('.js-countdown').html($countdownComplete);
+            } 
         });
     })
 );

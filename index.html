@@ -1,28 +1,32 @@
 ---
 layout: default
+type: main
 scripts:
     - /js/moment.min.js
     - /js/nc-countdown.js
+    - /js/hm-countdown.js
 ---
 
 <div class="container">
 <div class="row">
 
-    <div class="nc-countdown card six columns">
-        <div class="countdown-count">15</div>
+    <div class="nc-countdown js-countdown card six columns">
+        <div class="js-days countdown-count"></div>
         <div class="countdown-label">days<br>to go</div>
     </div>
 
-    <div class="card six columns">
-        park map 
+    <div class="nps-map card six columns">
+        <div class="map-card-header"><a href="/pages/park-map.html">National Parks Visited</a></div>
+        <a href="/pages/park-map.html"><img class="map-map" src="http://placehold.it/500x250"></a>
     </div>
 
 </div>
 
 <div class="row">
 
-    <div class="card six columns">
-        honeymoon countdown 
+    <div class="honeymoon-countdown card six columns">
+        <p class="hm-countdown">We're going to Finland in<br><span class="js-hm-countdown"></span>.</p>
+        <p class="photo-credit">Photo by <a href="https://www.flickr.com/photos/snowshoe_photography_alaska/16658111180/">Snowshoe Photography</a></p>
     </div>
 
     <div class="mailing-list card six columns">

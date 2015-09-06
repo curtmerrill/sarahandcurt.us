@@ -1,9 +1,21 @@
+.site-header,
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .site-header {
     margin-top: 2rem;
-    text-align: center;
+}
+.page-header {
+    margin-top: 1rem;
 }
 
 .site-logo {
     width: 400px;
     max-width: 75%;
+
+    .page-header & {
+        width: 200px;
+    }
 }

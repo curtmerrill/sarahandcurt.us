@@ -1,7 +1,11 @@
+{% if page.type == "main" %}
 <header class="site-header">
+{% else %}
+<header class="page-header">
+{% endif %}
 
   <div class="container">
-    <h1><img class="site-logo" src="/img/logo.png" alt="Sarah and Curt"></h1>
+    <h1><a href="/"><img class="site-logo" src="/img/logo.png" alt="Sarah and Curt"></a></h1>
   </div>
 
 </header>

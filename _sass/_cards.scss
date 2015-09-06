@@ -88,5 +88,100 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.countdown-complete {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: $slab;
+    font-style: italic;
+    line-height: 1em;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/* National Parks map
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nps-map {
+    overflow: hidden;
+    line-height: .9em;
+}
+
+.map-card-header {
+    background-color: #000;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1em;
+    padding: 1rem 1rem 2rem 1rem;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
 
 }
+
+
+
+
+.map-map {
+    width: 100%;
+    margin-bottom: -1em;
+}
+
+
+/* Honeymoon countdown
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.honeymoon-countdown {
+    background: url('/img/aurora.jpg');
+    background-size: 100%;
+    background-position: bottom center;
+    line-height: 1em;
+
+    p { margin-bottom: 0; }
+
+    .photo-credit {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        color: #666;
+        font-size: 1rem;
+        font-style: italic;
+        
+        a { color: #669; }
+    }
+}
+
+.hm-countdown {
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    left: 2rem;
+    bottom: 2rem;
+    font-family: $sans;
+    line-height: 2.2rem;
+
+    &>span {
+        font-size: 3rem;
+        font-family: $slab;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+

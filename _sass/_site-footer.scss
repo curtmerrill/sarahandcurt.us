@@ -1,12 +1,18 @@
 .site-footer {
     font-size: 1.5rem;
-    margin-top: 2rem;
-    border-top: 1px solid $navy;
+    margin-top: 4rem;
     padding-top: 1em;
 }
 
 .site-search {
     text-align: right;
 }
+.footer-link-list-header {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
 
-
+.footer-links {
+    margin-left: 0;
+    list-style-type: none;
+}
