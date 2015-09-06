@@ -2,14 +2,15 @@
 layout: default
 scripts:
     - /js/moment.min.js
+    - /js/nc-countdown.js
 ---
 
 <div class="container">
 <div class="row">
 
-    <div class="card six columns">
-        
-        countdown to NC
+    <div class="nc-countdown card six columns">
+        <div class="countdown-count">15</div>
+        <div class="countdown-label">days<br>to go</div>
     </div>
 
     <div class="card six columns">
@@ -25,15 +26,16 @@ scripts:
     </div>
 
     <div class="mailing-list card six columns">
-        <img class="card-stamp" src="/img/fire-stamp.png" alt="stamp">
-        <form action="https://tinyletter.com/sarahandcurt" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sarahandcurt', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-            <label for="tlemail">Enter your email address</label>
+        <img class="envelope-stamp" src="/img/fire-stamp.png" alt="stamp">
+        <div class="envelope-from">From: Us</div>
+        <form class="mailing-list-form" action="https://tinyletter.com/sarahandcurt" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sarahandcurt', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+            <label class="envelope-to" for="tlemail">To: You <span>Enter your email address</span></label>
             <input class="u-full-width" type="text" name="email" id="tlemail" />
             <input type="hidden" value="1" name="embed"/>
-            <br />
+            <div class="envelope-button">
             <input type="submit" value="Subscribe" />
-            <br />
-            <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a>
+            </div>
+            <small class="powered-by"><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small>
         </form>
           
     </div>

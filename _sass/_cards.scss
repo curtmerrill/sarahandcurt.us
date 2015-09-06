@@ -14,24 +14,79 @@
         background-image: url('/img/bg/paper_fibers_@2X.png');
     }
 
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
-.card-stamp {
+.envelope-stamp {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
+}
+.envelope-to {
+    padding-top: 1rem;
+    font-size: 2rem;
+
+    & > span {
+        display: block;
+        font-weight: 300;
+        font-size: .8em;
+        font-style: italic;
+    }
+}
+.mailing-list-form {
+    margin-bottom: 0;
+}
+.envelope-button {
+    text-align: center;
+
+    &>input[type="submit"] {
+        background-color: #fff;
+    }
+}
+.powered-by {
+    display: block;
+    text-align: center;
 }
 
 
 
 
-.card.nc-countdown {
-
+/* NC Countdown
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nc-countdown {
+    border-radius: 15px;
+    background-image: url('/img/bg/nc_plate.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @media screen and (min-resolution: 2dppx) {
+        background-image: url('/img/bg/nc_plate_@2X.png');
+    }
 }
 
+.countdown-count {
+    font-size: 7rem;
+    font-weight: 700;
+    font-family: $sans;
+    position: absolute;
+    right: 55%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
+.countdown-label {
+    font-family: $slab;
+    font-size: 3rem;
+    font-style: italic;
+    line-height: 1em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
-
+}
