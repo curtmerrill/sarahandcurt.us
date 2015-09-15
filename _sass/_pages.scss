@@ -1,12 +1,26 @@
 /* Page defaults
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page {
+    margin-top: 2rem;
+    @media screen and (min-width: 600px) {
+        margin-top: 3rem;
+    }
+}
+
 .page-title {
     color: lighten($navy, 5%);
     font-family: $slab;
     font-weight: bold;
 }
 
+.page-body {
+    font-size: 2rem;
+    font-family: $slab;
+}
 
+
+/* Map page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .map-legend {
     font-size: 1.5rem;
     margin-bottom: 1rem;
