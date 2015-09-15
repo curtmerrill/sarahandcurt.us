@@ -19,7 +19,7 @@
   
             // set countdown
             var now = moment(),
-                honeymoonDate = moment("2016-03-15"),
+                honeymoonDate = moment("2016-03-07"),
                 diff = honeymoonDate - now,
                 weeks = Math.floor(moment.duration(diff).asWeeks());
 
