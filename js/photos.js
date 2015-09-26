@@ -7,23 +7,48 @@
         // jQuery $ locally scoped
 
         function buildImgElement(idx, obj) {
-            var newImg = $('<img>');
+            var newImg = $('<div></div>');
             newImg.attr({
-                'src': obj['img_sm'],
-                'alt': obj['title'],
-                'class': 'gallery-img'
+                'data-img-src': obj['img_lg'],
+                'class': 'gallery-img',
+                'data-title': obj['title']
             });
+
+            newImg.css({
+                'background-image': "url(" + obj['img_sm'] + ")"
+            });
+
+            newImg.append('<div class="gallery-index">'+(idx+1)+'</div>');
 
             $('.js-photo-container').append(newImg);
         }
 
+        function displayImg(element) {
+            var $lb = $('.lightbox');
+            var $img = $(element);
+            $lb.append('<img class="lb-img" src="' + $img.attr('data-img-src') + '">');
+            $lb.append('<figcaption>'+$img.attr('data-title')+'</figcaption>');
+            $lb.append('<a class="flickr-link" href="">View on Flickr</a>');
+            $('body').toggleClass('no-scroll');
+            $lb.toggleClass('is-visible');
+
+        }
+
         function usePhotos(data) {
-            $.each(data, buildImgElement)
+            $.each(data, buildImgElement);
+            $('.gallery-img').click(function(e) {
+                displayImg(e.target);
+            });
         }
 
         $(function() {
-            // adjust size of countdown container
-            var container = $('.js-photo-container');
+            $('body').append('<figure class="lightbox"></figure>');
+            $('.lightbox').click(function(e) {
+                $(this).toggleClass('is-visible');
+                $(this).html('');
+                $('body').toggleClass('no-scroll');
+            });
+                
             
             $.ajax({
                 url: '/data/nc-photos.json',
