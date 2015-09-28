@@ -9,9 +9,10 @@
         function buildImgElement(idx, obj) {
             var newImg = $('<div></div>');
             newImg.attr({
-                'data-img-src': obj['img_lg'],
                 'class': 'gallery-img',
-                'data-title': obj['title']
+                'data-img-src': obj['img_lg'],
+                'data-title': obj['title'],
+                'data-link': obj['flickr_url']
             });
 
             newImg.css({
@@ -28,7 +29,7 @@
             var $img = $(element);
             $lb.append('<img class="lb-img" src="' + $img.attr('data-img-src') + '">');
             $lb.append('<figcaption>'+$img.attr('data-title')+'</figcaption>');
-            $lb.append('<a class="flickr-link" href="">View on Flickr</a>');
+            $lb.append('<a class="flickr-link" href="'+$img.attr('data-link')+'">View on Flickr</a>');
             $('body').toggleClass('no-scroll');
             $lb.toggleClass('is-visible');
 
