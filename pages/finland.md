@@ -12,8 +12,9 @@ Our family and friends [voted on our honeymoon](http://localhost:4000/wedding/ho
 and we found out at our reception that Finland received the majority of 
 ballots (by a landslide).
 
-We're going to go to [Kakslauttanen resort](http://www.kakslauttanen.fi) 
-and stay in a glass-domed igloo to take in the Northern Lights.
+We're going to the [Kakslauttanen resort](http://www.kakslauttanen.fi) 
+where we'll stay in a glass-domed igloo to take in the Northern Lights,
+and go on a reindeer safari.
 
 Our estimated departure is mid-March.
 
