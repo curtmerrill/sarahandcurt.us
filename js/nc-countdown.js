@@ -23,7 +23,7 @@
                 diff = moveDate - now,
                 days = moment.duration(diff).days();
 
-            var $countdownComplete = $('<div class="countdown-complete">We\'re here!</div>');
+            var $countdownComplete = $('<div class="countdown-complete"><a href="/pages/90-days-in-nc.html">We\'re here!</a></div>');
 
             if (days >=0) {
                 $('.js-days').text(days);

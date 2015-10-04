@@ -1,0 +1,20 @@
+/* Modules */
+
+
+figure {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 0 2rem 0;
+}
+
+figcaption {
+    font-size: .8em;
+    line-height: 1.2em;
+    font-family: $sans;
+    color: lighten($navy, 20%);
+}
+.sidebar-right {
+    float: right;
+    width: 45%;
+    margin-left: 2rem;
+}
